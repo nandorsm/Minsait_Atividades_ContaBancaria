@@ -17,8 +17,14 @@ class Conta:
         return self.__saldo
     
 
-    def depositar():
+    def depositar(self):
         pass
 
-    def sacar():
+    def sacar(self):
+        pass
+
+    def status(self):
+        pass
+
+    def opcoes(self):
         pass

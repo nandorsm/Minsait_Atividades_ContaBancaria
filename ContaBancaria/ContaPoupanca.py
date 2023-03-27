@@ -66,4 +66,16 @@ class ContaPoupanca(Conta):
         taxa_de_rendimento_ao_segundo = self.get_taxa_de_rendimento() / 2592000
         rendimento = (taxa_de_rendimento_ao_segundo / 100) * self.get_saldo()
         return print(f'Seu rendimento ao Segundo será de: {rendimento:.8f}')
+    
 
+    def status(self):
+        print(f'ID: {self.get_id_conta()}')
+        print(f'Saldo: {self.get_saldo()}')
+        print(f'Taxa de rendimento: {self.get_taxa_de_rendimento()}')
+
+    def opcoes(self):
+        print("O que vc deseja fazer?")
+        print("-Digite 1 para sacar")
+        print("-Digite 2 para depositar")
+        print("-Digite 3 para verificar os rendimentos por período")
+        print("-Digite 4 para sair")
