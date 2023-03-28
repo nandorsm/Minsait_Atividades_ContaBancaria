@@ -6,9 +6,11 @@ class ContaCorrente(Conta):
         super().__init__(id_conta, saldo)
         self.__limite = limite
     
+
     # Getters and Setters
     def set_limite(self, limite: float) -> float:
         self.__limite = limite
+
 
     def get_limite(self) -> float:
         return self.__limite
@@ -29,6 +31,7 @@ class ContaCorrente(Conta):
                 print("Saldo insuficiente!")
         except TypeError as e:
             print("Digite o valor que deseja sacar em numéricos!", e)
+        
         
     def depositar(self, valor) -> float:
         try:
